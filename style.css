@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #253383, #e571e5);
+    animation-name: bc;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    background-size: 175%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgba(245, 245, 220, 0.05);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    color: orange;
+  
+}
+
+nav:hover{
+  background-color: rgba(245, 245, 220, 0.10);
+}
+
+nav h1{
+  padding-left: 15px;
+}
+
+@keyframes bc{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.geral{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-color: rgba(15, 76, 117, 0.5);
+}
+
+#btnNovaColuna{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background: #191818;
+  border: 1px solid #191818;
+  border-radius: 10px;
+  color: #FFF; 
+  outline: none;
+  cursor: pointer;
+}
+
+#inputNovaColuna{
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 13px;
+  outline: none;
+  cursor: pointer;
+}
+
+.coluna button{
+  height: 30px;
+  width: 40px;
+  margin: 10px;
+  background: #191818;
+  border: 1px solid #191818;
+  border-radius: 10px;
+  color: #FFF; 
+  outline: none;
+  cursor: pointer;
+}
+
+.coluna {
+    margin: 0 auto;
+    width: 100%;;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background:  	#F5F5DC;
+    padding: 55px;
+    border-radius: 12px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    display: inline-block;
+    background-color: #dbd7d5;
+    border: 2px solid;
+    border-color: rgba(15, 76, 117, 0.5);
+}
+
+.topo {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 35px;     
+}
+
+.topo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    font-size: 1.2rem;
+    background: #191818;
+    color: black;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: #FFF;
+    outline: none;
+}
+
+.topo button:hover {
+    background: #1f1e1e;
+    cursor: pointer;
+}
+
+.inputAdd {
+    cursor: pointer;
+  /* é igual a ".topo input" */
+    width: 350px;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background: #2b2a2a;
+    color: #FFF;
+}
+
+.inputAdd2{
+    cursor: pointer;
+  /* é igual a ".topo input" */
+    width: 350px;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background: #2b2a2a;
+    color: #FFF;
+    margin-top: 12px;
+}
+
+.buttonAdd {
+  /* é igual a ".topo button" */
+    width: 40px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: #FFF;
+    outline: none;
+}
+
+.btnDo {
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #8B008B;
+    
+    color: #FFF;
+    outline: none;
+}
+
+.btnAcao:hover {
+    background: #8B008B;
+}
+
+.buttonAdd:hover {
+    background: #8B008B;
+}
+
+.btnAcaoMover {
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #8B008B;
+    color: #FFF;
+    outline: none;
+}
+
+.btnAcaoNaoMover:hover {
+    background: #bb0707;
+}
+
+.textoTarefa {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+    font-size: 25px;
+}
+
+.textoTarefa2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+    font-size: 17px;
+    font-style:italic;
+    color: red;
+}
+
+.li{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 12px;
+  background: white;
+  border: 2px solid white;
+  border-radius: 11px;
+}
+
+.lii {
+    border: 2px solid #056b05;
+    border-radius: 11px;
+    text-decoration: line-through;
+}
+
+.btnAcaoPegar:hover {
+  background: #056b05;
+}
+
